@@ -1,0 +1,20 @@
+/* README
+ *
+ *  Created by Cory on 10/09/16.
+ *  Copyright 2010 Cory R. Leach. All rights reserved.
+ *
+ *	These classes provide a simple way to create, send, and then
+ *  dispatch network messages over a GKSession.
+ *
+ *  NetworkManager does not establish a session for you, instead
+ *  you must establish the session and then set the session inside
+ *  of NetworkManager to your session. NetworkManager will then take ownership
+ *  of the session and set itself as the 'DataReceiveHandler' 
+ *
+ *  NetworkManager does *NOT* set itself as the session delegate. All connects
+ *  and disconnects of peers as well as session creation/establishment are handled
+ *  outside of NetowrkManager.
+ *
+ *	Requires: GameKit.framework
+ *
+ */
